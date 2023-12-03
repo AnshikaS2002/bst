@@ -24,4 +24,15 @@ public class BstImp<T extends Comparable<T>> {
         return root;
     }
 
+    public int size() {
+        return sizeImp(root);
+    }
+
+    int sizeImp(Node<T> root) {
+        if (root == null)
+            return 0;
+        else
+            return (sizeImp(root.left) + 1 + sizeImp(root.right));
+    }
+
 }
