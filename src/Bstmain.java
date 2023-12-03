@@ -17,6 +17,8 @@ public class Bstmain {
         bstImp.insertData(67);
 
         System.out.println(bstImp.size());
+        System.out.println(bstImp.searchData(11));
+        System.out.println(bstImp.searchData(100));
 
     }
 }
